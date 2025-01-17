@@ -1,0 +1,113 @@
+{
+  "infoData": [
+    {
+      "title": "Birth",
+      "descriptions": ["1900.12.21"]
+    },
+    {
+      "title": "Experience",
+      "descriptions": ["10년"]
+    },
+    {
+      "title": "Education",
+      "descriptions": [
+        "- 가나대학원 HCI 석박사 졸업",
+        "- 가나대학교 시각디자인학과 졸업"
+      ]
+    },
+
+    {
+      "title": "Contact",
+      "descriptions": ["name@gmail.com", "010-1234-4567"]
+    }
+  ],
+
+  "history": [
+    {
+      "title": "CAREER",
+      "descriptions": [
+        {
+          "year": "2023.08 ~ 재직중",
+          "company": "사과 디자인 스튜디오"
+        },
+        {
+          "year": "2018.07 ~ 2023.07",
+          "company": "가글코리아"
+        },
+        {
+          "year": "2015.07 ~ 2018.06",
+          "company": "바나나 UX 스튜디오"
+        },
+        {
+          "year": "2010.02 ~ 2015.01",
+          "company": "코리아 에이전시"
+        }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "AWARDS",
+      "descriptions": [
+        {
+          "year": "2022",
+          "company": "한국디자인진흥원 제 12회 해커톤 대상"
+        }
+      ]
+    }
+  ],
+
+  "active": [
+    {
+      "title": "Active",
+      "descriptions": [
+        {
+          "company": "- 가나진흥원 국내 UX학회 20기 활동"
+        },
+        {
+          "company": "- 김프런 UX심리학 매거진 출간"
+        },
+        {
+          "company": "- 2021 조식 디자이너의 자격들 출간 후 <대상>"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "PROJECTS",
+      "descriptions": [
+        {
+          "subtitle": "가나 서비스 리디자인",
+          "year": "2024 ~ 2025",
+          "descriptions": "아티스트와 팬들이 만다는 기존의 온라인 서비스에서 게이미피케이션 기능을 합친 인터렉션 디자인"
+        },
+        {
+          "subtitle": "홈페이지 리뉴얼",
+          "year": "2023",
+          "descriptions": "환경 친화적인 제품을 판매하는 온라인 쇼핑몰의 웹사이트를 깔끔하고 가동성 있는 레이아웃으로 재설계"
+        },
+        {
+          "subtitle": "소셜미디어 캠페인 디자인",
+          "year": "2023",
+          "descriptions": "피트니스 브랜드의 소셜 미디어 캠페인으로 다양한 플랫폼에 맞춘 비주얼 콘텐츠와 참여형 이벤트를 디자인"
+        },
+        {
+          "subtitle": "포스터 및 인쇄물 디자인",
+          "year": "2022",
+          "descriptions": "연례 예술 축제의 포스터 및 브로슈어를 화려한 색상과 독창적인 레이아웃으로 축제 행사 내용을 디자인"
+        },
+        {
+          "subtitle": "제품 패키지 디자인",
+          "year": "2021",
+          "descriptions": "프리미엄 생수 브랜드의 패키지 디자인을 맡아 청량감과 고급스러움을 동시에 전달할 수 있도록 작업"
+        },
+        {
+          "subtitle": "금융권 인터페이스 디자인",
+          "year": "2020",
+          "descriptions": "개인 금융 관리 어플리케이션 디자인을 맡아 사용자의 친화적인 인터페이스를 설계해 재정 상태를 쉽게 관리할 수 있도록 flow 설계"
+        }
+      ]
+    }
+  ]
+}
