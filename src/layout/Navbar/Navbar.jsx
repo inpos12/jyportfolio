@@ -30,13 +30,19 @@ const Li = styled.li`
 export default function Navbar() {
   return (
     <>
-      <Container>
-        <Row style={{ padding: "60px 0", width: "55%" }}>
-          <H1 color="#E0e0e0" weight="bold">
+      <Container style={{ borderBottom: "3px solid white" }}>
+        <Row
+          style={{
+            padding: "30px 0",
+            width: "55%",
+            borderLeft: "3px solid white",
+          }}
+        >
+          <H1 style={{ paddingLeft: "20px" }} color="#E0e0e0" weight="bold">
             Portfolio
           </H1>
         </Row>
-        <Row style={{ padding: "60px 0", width: "45%" }}>
+        <Row style={{ padding: "30px 0", width: "45%" }}>
           <ul
             style={{
               display: "flex",
@@ -47,10 +53,10 @@ export default function Navbar() {
               <H5>HOME</H5>
             </Li>
             <Li>
-              <H5>PROJECTS</H5>
+              <H5>CAREER DESCRIPTION</H5>
             </Li>
             <Li>
-              <H5>CONTACT</H5>
+              <H5>PROJECTS</H5>
             </Li>
           </ul>
         </Row>

@@ -33,11 +33,11 @@ export const H6 = styled.h6`
   line-height: 1.4;
 `;
 export const P = styled.p`
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: ${(props) => props.color};
   font-weight: ${(props) => props.weight};
-  margin-left: 20px;
+  margin-left: 10px;
 `;
 
 export const font = ["light", "normal", "bold", "bolder"];

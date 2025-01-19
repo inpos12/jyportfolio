@@ -25,13 +25,26 @@ export function Title(props) {
 function Des(props) {
   return <P weight={font[3]}>{props.des}</P>;
 }
+
+const infobox = {
+  width: "70%",
+  marginBottom: "10px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "flex-start",
+  justifyContent: "center",
+};
 export function InfoItem({ title, descriptions }) {
   return (
-    <Col style={{ flexDirection: "column" }}>
-      <div style={{ width: "30%", marginBottom: "20px" }}>
+    <Col
+      style={{
+        flexDirection: "row",
+      }}
+    >
+      <div style={{ width: "30%", marginBottom: "10px" }}>
         <Title title={title} />
       </div>
-      <div style={{ width: "70%", marginBottom: "20px" }}>
+      <div style={infobox}>
         {descriptions.map((des, index) => (
           <Des key={index} des={des} />
         ))}
@@ -42,7 +55,7 @@ export function InfoItem({ title, descriptions }) {
 export function HistoryTitle(props) {
   return (
     <>
-      <div style={{ width: "100%", marginBottom: "20px" }}>
+      <div style={{ width: "100%", marginBottom: "10px" }}>
         <H5 weight={font[2]}>{props.title}</H5>
       </div>
     </>
@@ -52,11 +65,12 @@ export function HistoryTitle(props) {
 
 //
 
-export function Profile2({ descriptions, size, sized }) {
+export function Profile2({ title, descriptions, size, sized }) {
   return (
     <Col style={{ flexDirection: "column" }}>
+      <HistoryTitle title={title} />
       {descriptions.map((des, index) => (
-        <div key={index} style={{ display: "flex", marginBottom: "20px" }}>
+        <div key={index} style={{ display: "flex", marginBottom: "5px" }}>
           <StyledDes size={size}>
             <P color="gray" weight={font[3]}>
               {des.year}
@@ -76,7 +90,7 @@ export function Profile3({ descriptions }) {
     <>
       <Col style={{ flexDirection: "column" }}>
         {descriptions.map((item, index) => (
-          <div style={{ marginTop: "20px" }} key={index}>
+          <div key={index}>
             <StyledDes
               size="45%"
               style={{ display: "flex", justifyContent: "space-between" }}
@@ -89,8 +103,8 @@ export function Profile3({ descriptions }) {
               </P>
             </StyledDes>
             <StyledDes size="100%">
-              <P style={{ fontSize: "14px" }} color="gray" weight={font[3]}>
-                {item.descriptions}
+              <P style={{ fontSize: "15px" }} color="gray" weight={font[3]}>
+                {item}
               </P>
             </StyledDes>
           </div>

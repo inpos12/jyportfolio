@@ -8,23 +8,33 @@ import {
 import { Container, Row, Col } from "../../layout/LayoutComponents";
 import {
   infoData,
-  history,
-  awards,
-  active,
+  education,
+  license,
+  introduction,
+  competency,
   projects,
 } from "../../components/Profile/Profile.json";
 import { H2 } from "../../components/FontStyles.js";
+import ProfileImg from "../../assets/profile.jpg";
 
+const style = {
+  borderLeft: "3px solid white",
+};
 export default function Home() {
+  console.log(projects[0].descriptions);
   return (
     <>
-      <Container style={{ display: "flex" }}>
-        <Row style={{ padding: "40px 0", width: "60%" }}>
-          <H2>위재열</H2>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
+      <Container
+        style={{
+          height: "90vh",
+        }}
+      >
+        <Row style={{ ...style, alignItems: "center", paddingLeft: "20px" }}>
+          <img
+            src={ProfileImg}
+            style={{ width: "30%", borderRadius: "30px" }}
+          />
+          <H2 style={{ margin: "20px" }}>위재열</H2>
           {infoData.map((item, index) => (
             <InfoItem
               key={index}
@@ -35,30 +45,41 @@ export default function Home() {
         </Row>
         <Row style={{ flexDirection: "column" }}>
           <Col style={{ flexDirection: "column" }}>
-            <HistoryTitle title={history[0].title} />
-            {history.map((item, index) => (
+            <HistoryTitle title={education[0].title} />
+            {education.map((item, index) => (
               <Profile2
                 key={index}
                 size="40%"
-                sized="30%"
+                sized="100%"
                 descriptions={item.descriptions}
               />
             ))}
           </Col>
           <Col style={{ flexDirection: "column" }}>
-            <HistoryTitle title={awards[0].title} />
-            {awards.map((item, index) => (
+            <HistoryTitle title={license[0].title} />
+            {license.map((item, index) => (
               <Profile2
                 key={index}
-                size="10%"
-                sized="90%"
+                size="40%"
+                sized="100%"
                 descriptions={item.descriptions}
               />
             ))}
           </Col>
           <Col style={{ flexDirection: "column" }}>
-            <HistoryTitle title={active[0].title} />
-            {active.map((item, index) => (
+            <HistoryTitle title={introduction[0].title} />
+            {introduction.map((item, index) => (
+              <Profile2
+                key={index}
+                size="0%"
+                sized="100%"
+                descriptions={item.descriptions}
+              />
+            ))}
+          </Col>
+          <Col style={{ flexDirection: "column" }}>
+            <HistoryTitle title={competency[0].title} />
+            {competency.map((item, index) => (
               <Profile2
                 key={index}
                 size="0%"

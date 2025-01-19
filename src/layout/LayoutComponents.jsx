@@ -9,8 +9,9 @@ export const Container = styled.div`
 export const Row = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  max-width: 33%;
   width: 100%;
+  padding: 80px 0 0 0;
 `;
 export const Col = styled.div`
   max-width: 100%;
