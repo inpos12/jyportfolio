@@ -1,5 +1,5 @@
 import React from "react";
-import { H1, P } from "../../components/FontStyles";
+import { H5, P } from "../../components/FontStyles";
 import { Row } from "../../layout/LayoutComponents";
 import styled from "styled-components";
 import { StyledDes } from "../Profile/Profile";
@@ -17,7 +17,7 @@ const RowLine = styled(Row)`
   padding: 20px 0 20px 20px;
   border-left: ${(props) => (props.border ? "3px solid white" : "")};
 `;
-const H1Style = styled(H1)`
+const H5Style = styled(H5)`
   position: relative;
   padding: 5px 0 25px 30px;
   &::before {
@@ -55,10 +55,9 @@ export function CarrerDescriptionComponent(props) {
   return (
     <>
       <RowLine height={props.height} border={props.border}>
-        <H1Style>
+        <H5Style>
           <AdditionalStyledComponent /> {props.title}
-        </H1Style>
-
+        </H5Style>
         {props.descriptions.map((item, index) => (
           <div key={index} style={{ display: "flex" }}>
             <StyledDes size="50%">
