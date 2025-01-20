@@ -91,19 +91,8 @@ export function Profile3({ descriptions }) {
       <Col style={{ flexDirection: "column" }}>
         {descriptions.map((item, index) => (
           <div key={index}>
-            <StyledDes
-              size="45%"
-              style={{ display: "flex", justifyContent: "space-between" }}
-            >
-              <H5 style={{ fontSize: "14px" }} weight={font[3]}>
-                {item.subtitle}
-              </H5>
-              <P style={{ fontSize: "14px" }} color="gray" weight={font[3]}>
-                {item.year}
-              </P>
-            </StyledDes>
             <StyledDes size="100%">
-              <P style={{ fontSize: "15px" }} color="gray" weight={font[3]}>
+              <P color="gray" weight={font[3]}>
                 {item}
               </P>
             </StyledDes>
