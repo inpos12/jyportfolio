@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  max-width: 100%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0 120px;
+  flex-wrap: wrap;
 `;
 export const Row = styled.div`
   display: flex;

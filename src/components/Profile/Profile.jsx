@@ -3,7 +3,7 @@ import { H1, H2, H3, H4, H5, H6, P, font } from "../FontStyles";
 import { Col } from "../../layout/LayoutComponents";
 import styled from "styled-components";
 
-const StyledDes = styled.div`
+export const StyledDes = styled.div`
   width: ${(props) => props.size || "40%"};
 `;
 

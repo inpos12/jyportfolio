@@ -2,9 +2,11 @@ import React from "react";
 import { Container, Row } from "../LayoutComponents";
 import { H1, H2, H3, H4, H5, P } from "../../components/FontStyles";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Li = styled.li`
   position: relative;
+  color: white;
 
   & ::after {
     content: ""; /* 가상 요소가 렌더링되도록 content 속성 추가 */
@@ -49,12 +51,16 @@ export default function Navbar() {
               justifyContent: "space-between",
             }}
           >
-            <Li>
-              <H5>HOME</H5>
-            </Li>
-            <Li>
-              <H5>CAREER DESCRIPTION</H5>
-            </Li>
+            <Link to="/">
+              <Li>
+                <H5>HOME</H5>
+              </Li>
+            </Link>
+            <Link to="/CarrerDescription">
+              <Li>
+                <H5>CAREER DESCRIPTION</H5>
+              </Li>
+            </Link>
             <Li>
               <H5>PROJECTS</H5>
             </Li>

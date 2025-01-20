@@ -1,4 +1,4 @@
-import React, { act } from "react";
+import React from "react";
 import {
   HistoryTitle,
   InfoItem,
@@ -14,8 +14,8 @@ import {
   competency,
   projects,
 } from "../../components/Profile/Profile.json";
-import { H2 } from "../../components/FontStyles.js";
-import ProfileImg from "../../assets/profile.jpg";
+import { H2, H5 } from "../../components/FontStyles.js";
+import ProfileImg from "../../assets/profile2.jpg";
 
 const style = {
   borderLeft: "3px solid white",
@@ -35,6 +35,9 @@ export default function Home() {
             style={{ width: "30%", borderRadius: "30px" }}
           />
           <H2 style={{ margin: "20px" }}>위재열</H2>
+          <H5 style={{ marginBottom: "20px" }}>
+            개인이 아닌 모두를 위해 일하고싶은 사람
+          </H5>
           {infoData.map((item, index) => (
             <InfoItem
               key={index}
