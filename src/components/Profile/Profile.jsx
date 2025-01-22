@@ -1,12 +1,17 @@
 import React from "react";
 import { H1, H2, H3, H4, H5, H6, P, font } from "../FontStyles";
-import { Col } from "../../layout/LayoutComponents";
+import { Col, Row } from "../../layout/LayoutComponents";
 import styled from "styled-components";
 
 export const StyledDes = styled.div`
   width: ${(props) => props.size || "40%"};
 `;
-
+export const RowNew = styled(Row)`
+  max-width: 33%;
+`;
+export const ColNew = styled(Col)`
+  max-width: 100%;
+`;
 // export const TextBox = styled.div`
 //   display: flex;
 //   align-items: center;
@@ -36,7 +41,7 @@ const infobox = {
 };
 export function InfoItem({ title, descriptions }) {
   return (
-    <Col
+    <ColNew
       style={{
         flexDirection: "row",
       }}
@@ -49,7 +54,7 @@ export function InfoItem({ title, descriptions }) {
           <Des key={index} des={des} />
         ))}
       </div>
-    </Col>
+    </ColNew>
   );
 }
 export function HistoryTitle(props) {
@@ -67,7 +72,7 @@ export function HistoryTitle(props) {
 
 export function Profile2({ title, descriptions, size, sized }) {
   return (
-    <Col style={{ flexDirection: "column" }}>
+    <ColNew style={{ flexDirection: "column" }}>
       <HistoryTitle title={title} />
       {descriptions.map((des, index) => (
         <div key={index} style={{ display: "flex", marginBottom: "5px" }}>
@@ -81,14 +86,14 @@ export function Profile2({ title, descriptions, size, sized }) {
           </StyledDes>
         </div>
       ))}
-    </Col>
+    </ColNew>
   );
 }
 
 export function Profile3({ descriptions }) {
   return (
     <>
-      <Col style={{ flexDirection: "column" }}>
+      <ColNew style={{ flexDirection: "column" }}>
         {descriptions.map((item, index) => (
           <div key={index}>
             <StyledDes size="100%">
@@ -98,7 +103,7 @@ export function Profile3({ descriptions }) {
             </StyledDes>
           </div>
         ))}
-      </Col>
+      </ColNew>
     </>
   );
 }

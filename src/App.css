@@ -1,15 +1,25 @@
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+@font-face {
+  font-family: "Anton";
+  src: url("./font/Anton-Regular.ttf");
+  unicode-range: U+0020-007F;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url("./font/NotoSansKR-VariableFont_wght.ttf");
+  unicode-range: U+AC00-D7A3, U+0030-0039; /* 한글 */
+}
 
 body {
-  font-family: "NanumSquare", sans-serif;
-
-  /* background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); */
+  font-family: "Noto Sans KR", sans-serif;
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
   /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
   /* background: linear-gradient(to bottom, #485563, #29323c); */
-  background: linear-gradient(to bottom, #232526, #414345);
-
+  /* background: linear-gradient(to bottom, #232526, #414345); */
   color: white;
-  overflow-y: hidden;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed; /* 배경이 스크롤에 따라 고정되도록 */
 }
 
 * {

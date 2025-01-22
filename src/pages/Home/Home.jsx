@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "styled-components";
 import {
   HistoryTitle,
   InfoItem,
@@ -16,6 +17,7 @@ import {
 } from "../../components/Profile/Profile.json";
 import { H2, H5 } from "../../components/FontStyles.js";
 import ProfileImg from "../../assets/profile2.jpg";
+import { ColNew, RowNew } from "../../components/Profile/Profile.jsx";
 
 const style = {
   borderLeft: "3px solid white",
@@ -23,13 +25,19 @@ const style = {
 export default function Home() {
   console.log(projects[0].descriptions);
   return (
-    <>
+    <body>
       <Container
         style={{
           height: "90vh",
         }}
       >
-        <Row style={{ ...style, alignItems: "center", paddingLeft: "20px" }}>
+        <RowNew
+          style={{
+            ...style,
+            alignItems: "center",
+            paddingLeft: "20px",
+          }}
+        >
           <img
             src={ProfileImg}
             style={{ width: "30%", borderRadius: "30px" }}
@@ -45,9 +53,9 @@ export default function Home() {
               descriptions={item.descriptions}
             />
           ))}
-        </Row>
-        <Row style={{ flexDirection: "column" }}>
-          <Col style={{ flexDirection: "column" }}>
+        </RowNew>
+        <RowNew style={{ flexDirection: "column" }}>
+          <ColNew style={{ flexDirection: "column" }}>
             <HistoryTitle title={education[0].title} />
             {education.map((item, index) => (
               <Profile2
@@ -57,8 +65,8 @@ export default function Home() {
                 descriptions={item.descriptions}
               />
             ))}
-          </Col>
-          <Col style={{ flexDirection: "column" }}>
+          </ColNew>
+          <ColNew style={{ flexDirection: "column" }}>
             <HistoryTitle title={license[0].title} />
             {license.map((item, index) => (
               <Profile2
@@ -68,8 +76,8 @@ export default function Home() {
                 descriptions={item.descriptions}
               />
             ))}
-          </Col>
-          <Col style={{ flexDirection: "column" }}>
+          </ColNew>
+          <ColNew style={{ flexDirection: "column" }}>
             <HistoryTitle title={introduction[0].title} />
             {introduction.map((item, index) => (
               <Profile2
@@ -79,8 +87,8 @@ export default function Home() {
                 descriptions={item.descriptions}
               />
             ))}
-          </Col>
-          <Col style={{ flexDirection: "column" }}>
+          </ColNew>
+          <ColNew style={{ flexDirection: "column" }}>
             <HistoryTitle title={competency[0].title} />
             {competency.map((item, index) => (
               <Profile2
@@ -90,15 +98,15 @@ export default function Home() {
                 descriptions={item.descriptions}
               />
             ))}
-          </Col>
-        </Row>
-        <Row align="column">
+          </ColNew>
+        </RowNew>
+        <RowNew align="column">
           <HistoryTitle title={projects[0].title} />
           {projects.map((item, index) => (
             <Profile3 key={index} descriptions={item.descriptions} />
           ))}
-        </Row>
+        </RowNew>
       </Container>
-    </>
+    </body>
   );
 }

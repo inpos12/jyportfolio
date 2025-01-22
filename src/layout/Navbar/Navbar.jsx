@@ -4,6 +4,15 @@ import { H1, H2, H3, H4, H5, P } from "../../components/FontStyles";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const H1Navbar = styled(H1)`
+  font-family: "Anton";
+  letter-spacing: 5px;
+`;
+const H5Navbar = styled(H5)`
+  font-family: "Anton";
+  letter-spacing: 3px;
+`;
+
 const Li = styled.li`
   position: relative;
   color: white;
@@ -35,16 +44,18 @@ export default function Navbar() {
       <Container style={{ borderBottom: "3px solid white" }}>
         <Row
           style={{
-            padding: "30px 0",
+            padding: "30px 20px",
             width: "55%",
             borderLeft: "3px solid white",
           }}
         >
-          <H1 style={{ paddingLeft: "20px" }} color="#E0e0e0" weight="bold">
+          <H1Navbar color="#E0e0e0" weight="bold">
             Portfolio
-          </H1>
+          </H1Navbar>
         </Row>
-        <Row style={{ padding: "30px 0", width: "45%" }}>
+        <Row
+          style={{ padding: "30px 0", width: "45%", justifyContent: "center" }}
+        >
           <ul
             style={{
               display: "flex",
@@ -53,17 +64,19 @@ export default function Navbar() {
           >
             <Link to="/">
               <Li>
-                <H5>HOME</H5>
+                <H5Navbar>HOME</H5Navbar>
               </Li>
             </Link>
             <Link to="/CarrerDescription">
               <Li>
-                <H5>CAREER DESCRIPTION</H5>
+                <H5Navbar>CAREER DESCRIPTION</H5Navbar>
               </Li>
             </Link>
-            <Li>
-              <H5>PROJECTS</H5>
-            </Li>
+            <Link to="/Project">
+              <Li>
+                <H5Navbar>PROJECTS</H5Navbar>
+              </Li>
+            </Link>
           </ul>
         </Row>
       </Container>

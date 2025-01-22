@@ -13,12 +13,13 @@ const Pfont = styled(P)`
 const RowLine = styled(Row)`
   max-width: 48%;
   width: 100%;
-  height: ${(props) => (props.height ? "310px" : "100vh")};
-  padding: 20px 0 20px 20px;
+  height: ${(props) => (props.height ? "310px" : "")};
+  padding: 40px 0 40px 20px;
   border-left: ${(props) => (props.border ? "3px solid white" : "")};
 `;
 const H5Style = styled(H5)`
   position: relative;
+
   padding: 5px 0 25px 30px;
   &::before {
     content: "";
