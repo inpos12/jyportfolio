@@ -88,7 +88,7 @@ const SlideBackGround = styled.div`
 
 const SlideImageContainer = styled.div`
   position: absolute;
-  width: 600px;
+  width: 800px;
   z-index: 11;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -169,7 +169,11 @@ function Item(props) {
         <Cols key={index} onClick={DetailTab} id="imageBox">
           <Image src={item.path} />
           <ImageTextBox>
-            <H1 style={{ fontSize: "28px" }}>{item.name}</H1>
+            <H1 style={{ fontSize: "16px" }}>{item.name}</H1>
+            <H1 style={{ fontSize: "28px" }}>
+              {item.names}
+              <span style={{ fontSize: "14px" }}>{item.span}</span>
+            </H1>
             <P style={{ fontSize: "16px" }}>{item.year}</P>
           </ImageTextBox>
           <SlideBackGround back zIndex />
@@ -181,7 +185,7 @@ function Item(props) {
           <SlideBackGround onClick={DetailClose} />
 
           <SlideImageContainer>
-            <SlideWrapper translate={-currentIndex * 600}>
+            <SlideWrapper translate={-currentIndex * 800}>
               {props.img.map((img, index) => (
                 <SlideImage
                   key={index}

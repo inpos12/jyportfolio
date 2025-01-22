@@ -77,7 +77,7 @@ export function Profile2({ title, descriptions, size, sized }) {
       {descriptions.map((des, index) => (
         <div key={index} style={{ display: "flex", marginBottom: "5px" }}>
           <StyledDes size={size}>
-            <P color="gray" weight={font[3]}>
+            <P color="#E0e0e0" weight={font[3]}>
               {des.year}
             </P>
           </StyledDes>
