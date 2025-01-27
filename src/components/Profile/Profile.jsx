@@ -60,7 +60,7 @@ export function InfoItem({ title, descriptions }) {
 export function HistoryTitle(props) {
   return (
     <>
-      <div style={{ width: "100%", marginBottom: "10px" }}>
+      <div style={{ width: "100%", marginTop: "16px" }}>
         <H5 weight={font[2]}>{props.title}</H5>
       </div>
     </>

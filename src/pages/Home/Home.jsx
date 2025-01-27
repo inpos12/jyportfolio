@@ -18,6 +18,7 @@ import {
 import { H2, H5 } from "../../components/FontStyles.js";
 import ProfileImg from "../../assets/profile2.jpg";
 import { ColNew, RowNew } from "../../components/Profile/Profile.jsx";
+import { font } from "../../components/FontStyles.js";
 
 const style = {
   borderLeft: "3px solid white",
@@ -44,7 +45,7 @@ export default function Home() {
           />
           <H2 style={{ margin: "20px" }}>위재열</H2>
           <H5 style={{ marginBottom: "20px" }}>
-            개인이 아닌 모두를 위해 일하고싶은 사람
+            개인이 아닌 모두를 위해 일하고 싶은 사람
           </H5>
           {infoData.map((item, index) => (
             <InfoItem
@@ -78,17 +79,6 @@ export default function Home() {
             ))}
           </ColNew>
           <ColNew style={{ flexDirection: "column" }}>
-            <HistoryTitle title={introduction[0].title} />
-            {introduction.map((item, index) => (
-              <Profile2
-                key={index}
-                size="0%"
-                sized="100%"
-                descriptions={item.descriptions}
-              />
-            ))}
-          </ColNew>
-          <ColNew style={{ flexDirection: "column" }}>
             <HistoryTitle title={competency[0].title} />
             {competency.map((item, index) => (
               <Profile2
@@ -101,7 +91,9 @@ export default function Home() {
           </ColNew>
         </RowNew>
         <RowNew align="column">
-          <HistoryTitle title={projects[0].title} />
+          <H5 style={{ marginBottom: "16px" }} weight={font[2]}>
+            자기소개서
+          </H5>
           {projects.map((item, index) => (
             <Profile3 key={index} descriptions={item.descriptions} />
           ))}
