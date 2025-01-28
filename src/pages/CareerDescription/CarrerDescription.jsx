@@ -17,34 +17,34 @@ export default function CarrerDescription() {
   return (
     <>
       <Container style={{ flexDirection: "row" }}>
-        {year2021.map((item, index) => (
+        {year2024.map((item, index) => (
           <CarrerDescriptionComponent
             border={true}
+            title={year2024[0].title}
+            key={index}
+            descriptions={item.descriptions}
+          />
+        ))}
+
+        {year2023.map((item, index) => (
+          <CarrerDescriptionComponent
             height={true}
-            title={year2021[0].title}
+            title={year2023[0].title}
             key={index}
             descriptions={item.descriptions}
           />
         ))}
         {year2022.map((item, index) => (
           <CarrerDescriptionComponent
-            height={true}
+            border={true}
             title={year2022[0].title}
             key={index}
             descriptions={item.descriptions}
           />
         ))}
-        {year2023.map((item, index) => (
+        {year2021.map((item, index) => (
           <CarrerDescriptionComponent
-            border={true}
-            title={year2023[0].title}
-            key={index}
-            descriptions={item.descriptions}
-          />
-        ))}
-        {year2024.map((item, index) => (
-          <CarrerDescriptionComponent
-            title={year2024[0].title}
+            title={year2021[0].title}
             key={index}
             descriptions={item.descriptions}
           />
