@@ -1,8 +1,25 @@
-# WI,JAE-YEOL
+# 🥟 JYPortFolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 프로젝트 소개
+React.js를 사용해 포트폴리오 웹사이트를 제작했습니다. 클라이언트의 의뢰에 따라 디자인과 기능을 구현하였습니다.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ 기술 스택
+
+### ✅ Front-end
+- React  
+- JavaScript  
+- CSS  
+
+### ✅ Library
+- **styled-components**
+
+---
+
+## 🧩 주요 구현 내용
+
+- **styled-components**를 활용해 컴포넌트 단위로 스타일을 관리하고, 재사용성을 높였습니다.
+- React의 **State**를 활용해 동적인 UI 상태 관리를 구현했습니다.
+- 클라이언트와 협의하여 초기 디자인 시안을 공유하고, 피드백에 따라 수정하여 최종 결과물을 완성했습니다.
+- 클라이언트 요청에 따라 **반응형 디자인은 제외**하고, **1920x1680 해상도 기준**으로 고정형 레이아웃을 제작하였습니다.
